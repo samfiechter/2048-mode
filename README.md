@@ -1,7 +1,7 @@
 2048-game.el
 ============
 
-An emacs mode to play Gabriele Cirulli's 2048
+An emacs lisp version of Gabriele Cirulli's 2048
 ---------------------------------------------
 
 I thought I'd post this -- it's an attempt to write Gabriele Cirulli's to emacs lisp.
