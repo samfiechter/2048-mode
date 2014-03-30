@@ -99,9 +99,7 @@
                     (setq 2048-score (+ 2048-score ar))
                     (message (concat "Score : " (number-to-string 2048-score)))
                     (aset 2048-board a (* 2 ar))
-		    (2048-slide b n ms) 
-		    
-		    )
+		    (2048-slide b n ms)  )
 		(if (= 0 ar) 
 		    (2048-slide a (- n 1) ms)
 		  (aset xx y (- n 1 )) ) )) ) ))
@@ -148,6 +146,7 @@
 (defun 2048-draw ()
   (interactive)
   (2048-listing-command)
+  (setq cursor-type nil)
   (tabulated-list-print t))
 
 (defun 2048-color (i)
