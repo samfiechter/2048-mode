@@ -38,6 +38,7 @@
   (setq 2048-board (copy-sequence 2048-empty-board))
   (2048-add-another-number)
   (setq 2048-score 0)
+  (setq cursor-type nil)
   (2048-draw)
   )
 
@@ -46,6 +47,7 @@
   (interactive)
   (setq 2048-board (copy-sequence 2048-empty-board))
   (setq 2048-score 0)
+  (setq cursor-type box)
   (kill-buffer "*2048*"))
 
 (defun 2048-move-right ()
@@ -146,7 +148,7 @@
 (defun 2048-draw ()
   (interactive)
   (2048-listing-command)
-  (setq cursor-type nil)
+
   (tabulated-list-print t))
 
 (defun 2048-color (i)
