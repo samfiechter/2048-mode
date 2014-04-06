@@ -26,11 +26,6 @@
 (define-key 2048-mode-map [up]                '2048-move-up)
 (define-key 2048-mode-map [down]        '2048-move-down)
 
-
-(defvar 2048-null-map
-  (make-sparse-keymap '2048-null-map))
-(define-key 2048-null-map "n"                '2048-start-game)
-
 ;; ;;;;;;;;;;;;; functions ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defun 2048-start-game ()
   "New 2048 Game!"
