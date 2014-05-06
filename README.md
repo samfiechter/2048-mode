@@ -1,3 +1,11 @@
+Don't use this.. Zachary Kanfer's one is much better
+
+Find it at the url below or on MELPA
+
+;; URL: https://bitbucket.org/zck/2048.el
+
+
+
 2048-game.el
 ============
 
@@ -11,3 +19,4 @@ Up, Down, Left and right move the board
 q and n quit the game and reset the board respectively.
 
 
+Don't use
